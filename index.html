@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>URL shortening API Challenge</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <header class="header container">
+      <a href="">
+        <img class="header-logo" src="images/logo.svg" alt="Logo Image" />
+      </a>
+      <nav class="main-nav icon-click">
+        <ul class="main-nav-list">
+          <li><a href="#" class="main-nav-link">Features</a></li>
+          <li><a href="#" class="main-nav-link">Pricing</a></li>
+          <li><a href="#" class="main-nav-link">Resources</a></li>
+        </ul>
+        <div class="header-cta">
+          <a href="#" class="header-btn-login">Login</a>
+          <a href="#" class="btn-cta header-btn-cta">Sign Up</a>
+        </div>
+      </nav>
+      <button class="btn-mobile-nav">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon icon-menu"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon icon-close"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero container">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">More than just shorter links</h1>
+            <p class="subheading hero-description">
+              Build your brand's recognition and get detailed insights on how
+              your links are performing.
+            </p>
+            <a href="#" class="btn-cta hero-btn">Get Started</a>
+          </div>
+          <div class="hero-img-box">
+            <img
+              src="images/illustration-working.svg"
+              alt="A person working illustration"
+              class="hero-img"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section-short-link">
+        <div class="container">
+          <div class="short-link">
+            <form action="/" class="short-link-form">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Shorten a link here..."
+                  class="short-link-input"
+                  value=""
+                />
+                <span class="err-text">Please add a link</span>
+              </div>
+              <button type="submit" class="btn btn-short-link">
+                Shorten It!
+              </button>
+            </form>
+          </div>
+          <div class="short-link-output">
+            <!-- <div class="output">
+              <p class="original-link">https://frontendmentor.io</p>
+              <p class="output-link">https://rel.in/k47f83</p>
+              <button class="btn btn-copy">Copy</button>
+            </div>
+            <div class="output">
+              <p class="original-link">https://frontendmentor.io</p>
+              <p class="output-link">https://rel.in/k47f83</p>
+              <button class="btn btn-copy">Copy</button>
+            </div>
+            <div class="output">
+              <p class="original-link">https://frontendmentor.io</p>
+              <p class="output-link">https://rel.in/k47f83</p>
+              <button class="btn btn-copy">Copy</button>
+            </div> -->
+          </div>
+        </div>
+      </section>
+      <section class="section-feature">
+        <div class="container">
+          <div class="feature-text-box">
+            <h2 class="heading-secondary feature-title">Advanced Statistics</h2>
+            <p class="subheading">
+              Track how your links are performing across the web with our
+              advanced statistics dashboard.
+            </p>
+          </div>
+          <div class="feature">
+            <div class="feature-box feature-box-1">
+              <div class="feature-icon">
+                <img
+                  src="images/icon-brand-recognition.svg"
+                  alt="Brand recognition"
+                />
+              </div>
+              <h3 class="heading-tertiary">Brand Recognition</h3>
+              <p class="feature-text">
+                Boost your brand recognition with each click. Generic links
+                don't mean a thing. Branded links help instil confidence in your
+                content.
+              </p>
+            </div>
+            <div class="feature-box feature-box-2">
+              <div class="feature-icon">
+                <img
+                  src="images/icon-detailed-records.svg"
+                  alt="Detail Records"
+                />
+              </div>
+              <h3 class="heading-tertiary">Detailed Records</h3>
+              <p class="feature-text">
+                Gain insights into who is clicking your links. Knowing when and
+                where people engage with your content helps inform better
+                decisions.
+              </p>
+            </div>
+            <div class="feature-box feature-box-3">
+              <div class="feature-icon">
+                <img
+                  src="images/icon-fully-customizable.svg"
+                  alt="Fully Customizable"
+                />
+              </div>
+              <h3 class="heading-tertiary">Fully Customizable</h3>
+              <p class="feature-text">
+                Improve brand awareness and content discoverability through
+                customizable links, supercharging audience engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-cta">
+        <div class="container">
+          <div class="cta">
+            <h2 class="heading-secondary cta-title">Boost your links today</h2>
+            <a href="#" class="btn-cta hero-btn">Get Started</a>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container flex">
+          <a href="">
+            <img
+              class="footer-logo"
+              src="images/logo-white.svg"
+              alt="Logo Image"
+            />
+          </a>
+          <div class="footer-links">
+            <nav class="nav-col">
+              <p class="footer-heading">Features</p>
+              <ul class="footer-nav">
+                <li><a href="#" class="footer-link">Link Shortening</a></li>
+                <li><a href="#" class="footer-link">Branded Links</a></li>
+                <li><a href="#" class="footer-link">Analytics</a></li>
+              </ul>
+            </nav>
+            <nav class="nav-col">
+              <p class="footer-heading">Resources</p>
+              <ul class="footer-nav">
+                <li><a href="#" class="footer-link">Blog</a></li>
+                <li><a href="#" class="footer-link">Developers</a></li>
+                <li><a href="#" class="footer-link">Support</a></li>
+              </ul>
+            </nav>
+            <nav class="nav-col">
+              <p class="footer-heading">Company</p>
+              <ul class="footer-nav">
+                <li><a href="#" class="footer-link">About</a></li>
+                <li><a href="#" class="footer-link">Our Team</a></li>
+                <li><a href="#" class="footer-link">Careers</a></li>
+                <li><a href="#" class="footer-link">Contact</a></li>
+              </ul>
+            </nav>
+
+            <ul class="social-links">
+              <li>
+                <a href="#" class="footer-link">
+                  <img
+                    src="images/icon-facebook.svg"
+                    alt="Social Link facebook"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">
+                  <img
+                    src="images/icon-twitter.svg"
+                    alt="Social Link twitter"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">
+                  <img
+                    src="images/icon-pinterest.svg"
+                    alt="Social Link pinterest"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">
+                  <img
+                    src="images/icon-instagram.svg"
+                    alt="Social Link Instagram"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
