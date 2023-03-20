@@ -10,4 +10,4 @@ I have used shrtcode API to create shortened URLs. You can access the API
 
 ## Live Link
 
-[Here is the live site](https://fem-urlshortening.netlify.app/)
+[Here is the live site](https://shortly-hussain.netlify.app/)
